@@ -1,4 +1,4 @@
-# 🚀 The Dojo Blog
+# ⛩️ The Dojo Blog
 
 A modern, responsive blogging platform built with React and React Router. Create, read, and manage blog posts with an elegant and intuitive user interface.
 
@@ -41,13 +41,13 @@ git --version
 ### Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/dojo-blog.git
+git clone https://github.com/Hesed2817/dojo-blog.git
 cd dojo-blog
 ```
 
 Or, if using SSH:
 ```bash
-git clone git@github.com:yourusername/dojo-blog.git
+git clone git@github.com:Hesed2817/dojo-blog.git
 cd dojo-blog
 ```
 
@@ -346,7 +346,7 @@ This project is open source and available under the **MIT License**.
 
 ## 👤 Author
 
-Created with ❤️ by the Dojo Blog Team
+Created with ❤️ by Hesed
 
 ---
 
