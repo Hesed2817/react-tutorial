@@ -1,16 +1,17 @@
-function BlogList({ blogs, title, handleDelete }) {
+function BlogList({ blogs, title }) {
     return (
         <div className="blog-list">
             <h1>{title}</h1>
             {blogs.map((blog) => (
-                <div className="blog-preview" key={blog.id}>
+                <div className="blog-preview" onClick={() => {
+                    window.location.href = `/blogs/${blog.id}`;
+                }} key={blog.id}>
                     <h2>{blog.title}</h2>
-                    <p>Written by {blog.author}</p>
-                    <button onClick={() => handleDelete(blog.id)}>Delete</button>
+                    <p>Written by <span className="capitalize"><strong>{blog.author}</strong></span></p>
                 </div>
             ))}
 
-            {blogs.length > 0 ? "" : <p className="blog-preview">There are no blogs yet.. 😞</p>}
+            {blogs.length > 0 ? "" : <div className="blog-preview"><p>There are no blogs yet.. 😞</p></div>}
         </div>
     );
 }

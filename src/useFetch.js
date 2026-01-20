@@ -23,10 +23,10 @@ function useFetch(url) {
                     setError(err.message);
                     setIsLoading(false);
                 });
-        }, 1000);
+        }, 500);
     }, [url]);
 
-    return {data, isLoading, error, setData}
+    return {data, isLoading, setIsLoading, error}
 }
 
 export default useFetch;
